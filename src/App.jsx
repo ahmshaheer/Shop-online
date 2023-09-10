@@ -6,14 +6,16 @@ import {
 } from "react-router-dom";
 
 import Navigation from "./components/Navigation/navbar";
+import PopUpMain from "./components/PopUp-Main/popUp-Main";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigation />} />
-        {/* <Route path="/blog/*" element={<BlogApp />} /> */}
-        {/* <Route path="/users/*" element={<UserApp />} /> */}
+        <Route path="/" element={<Navigation />}>
+          {/* For showing Pop up menu */}
+          <Route path="/" element={<PopUpMain />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )

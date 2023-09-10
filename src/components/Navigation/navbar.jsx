@@ -29,7 +29,6 @@ export default function Navigation() {
                 <li>
                     <img src={Profile} width={19} />
                 </li>
-
             </div>
         </div>
     )
